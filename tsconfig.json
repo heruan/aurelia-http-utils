@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["es2015", "dom"],
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules"
+  ]
+}
