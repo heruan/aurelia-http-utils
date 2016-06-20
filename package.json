@@ -1,6 +1,6 @@
 {
   "name": "aurelia-http-utils",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A collection of utilities to interact via HTTP.",
   "keywords": [
     "aurelia",
@@ -9,7 +9,7 @@
     "http"
   ],
   "author": "Giovanni Lovato <heruan@aldu.net>",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "homepage": "https://github.com/heruan/aurelia-http-utils",
   "bugs": {
     "url": "https://github.com/heruan/aurelia-http-utils/issues"
