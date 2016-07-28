@@ -12,4 +12,3 @@ var HttpHeaders = (function () {
     return HttpHeaders;
 }());
 exports.HttpHeaders = HttpHeaders;
-//# sourceMappingURL=http-headers.js.map

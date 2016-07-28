@@ -12,4 +12,3 @@ var MediaType = (function () {
     return MediaType;
 }());
 exports.MediaType = MediaType;
-//# sourceMappingURL=media-type.js.map

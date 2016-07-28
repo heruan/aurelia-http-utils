@@ -24,4 +24,3 @@ var LinkHeaderParser = (function () {
     return LinkHeaderParser;
 }());
 exports.LinkHeaderParser = LinkHeaderParser;
-//# sourceMappingURL=link-header-parser.js.map
