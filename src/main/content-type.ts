@@ -6,7 +6,7 @@ export class ContentType {
 
     public static APPLICATION_JSON_PATCH = ContentType.valueOf(MediaType.APPLICATION_JSON_PATCH);
 
-    public type: string;
+    protected type: string;
 
     protected subtype: string;
 

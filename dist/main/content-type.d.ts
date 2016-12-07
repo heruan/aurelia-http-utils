@@ -1,7 +1,7 @@
 export declare class ContentType {
     static APPLICATION_JSON: ContentType;
     static APPLICATION_JSON_PATCH: ContentType;
-    type: string;
+    protected type: string;
     protected subtype: string;
     protected params: Map<string, string>;
     constructor(type: string, subtype?: string, params?: Map<string, string>);
