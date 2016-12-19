@@ -15,3 +15,5 @@ var multipart_related_1 = require("./multipart-related");
 exports.MultipartRelated = multipart_related_1.MultipartRelated;
 var part_1 = require("./part");
 exports.Part = part_1.Part;
+
+//# sourceMappingURL=index.js.map

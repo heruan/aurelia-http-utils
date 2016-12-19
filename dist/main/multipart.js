@@ -6,3 +6,5 @@ var Multipart = (function () {
     return Multipart;
 }());
 exports.Multipart = Multipart;
+
+//# sourceMappingURL=multipart.js.map

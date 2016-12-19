@@ -46,6 +46,8 @@ var ContentType = (function () {
     };
     return ContentType;
 }());
-exports.ContentType = ContentType;
 ContentType.APPLICATION_JSON = ContentType.valueOf(media_type_1.MediaType.APPLICATION_JSON);
 ContentType.APPLICATION_JSON_PATCH = ContentType.valueOf(media_type_1.MediaType.APPLICATION_JSON_PATCH);
+exports.ContentType = ContentType;
+
+//# sourceMappingURL=content-type.js.map

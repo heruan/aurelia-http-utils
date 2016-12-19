@@ -14,3 +14,5 @@ var Part = (function () {
     return Part;
 }());
 exports.Part = Part;
+
+//# sourceMappingURL=part.js.map

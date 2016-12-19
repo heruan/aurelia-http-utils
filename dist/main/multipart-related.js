@@ -43,5 +43,7 @@ var MultipartRelated = (function (_super) {
     };
     return MultipartRelated;
 }(multipart_1.Multipart));
-exports.MultipartRelated = MultipartRelated;
 MultipartRelated.CONTENT_ID = "Content-ID";
+exports.MultipartRelated = MultipartRelated;
+
+//# sourceMappingURL=multipart-related.js.map
