@@ -2,6 +2,15 @@ import { MediaType } from "./media-type";
 
 export class ContentType {
 
+    public static valueOf(value: string): ContentType {
+        let params = value.split(";");
+        let [ type, subtype ] = params.shift().split("/");
+        return new ContentType(type, subtype, new Map<string, string>(<[string, string][]>params.map(param => {
+            let indexOfEqualSign = param.indexOf("=");
+            return [ param.substring(0, indexOfEqualSign), param.substring(indexOfEqualSign + 1) ];
+        })));
+    }
+
     public static APPLICATION_JSON = ContentType.valueOf(MediaType.APPLICATION_JSON);
 
     public static APPLICATION_JSON_PATCH = ContentType.valueOf(MediaType.APPLICATION_JSON_PATCH);
@@ -51,15 +60,6 @@ export class ContentType {
             string += ";" + Array.from(this.params).map(param => param.join("=")).join(";");
         }
         return string;
-    }
-
-    public static valueOf(value: string): ContentType {
-        let params = value.split(";");
-        let [ type, subtype ] = params.shift().split("/");
-        return new ContentType(type, subtype, new Map<string, string>(<[string, string][]>params.map(param => {
-            let indexOfEqualSign = param.indexOf("=");
-            return [ param.substring(0, indexOfEqualSign), param.substring(indexOfEqualSign + 1) ];
-        })));
     }
 
 }

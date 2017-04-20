@@ -1,4 +1,5 @@
 export declare class ContentType {
+    static valueOf(value: string): ContentType;
     static APPLICATION_JSON: ContentType;
     static APPLICATION_JSON_PATCH: ContentType;
     protected type: string;
@@ -12,5 +13,4 @@ export declare class ContentType {
     getParam(name: string): string;
     setParam(name: string, value: string): ContentType;
     toString(): string;
-    static valueOf(value: string): ContentType;
 }

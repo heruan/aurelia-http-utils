@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Headers = (function () {
     function Headers() {
         this.headers = new Map();

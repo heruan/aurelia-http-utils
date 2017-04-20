@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var http_headers_1 = require("./http-headers");
 exports.HttpHeaders = http_headers_1.HttpHeaders;
 var media_type_1 = require("./media-type");

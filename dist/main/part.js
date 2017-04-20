@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var headers_1 = require("./headers");
 var http_headers_1 = require("./http-headers");
 var Part = (function () {

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var media_type_1 = require("./media-type");
 var ContentType = (function () {
     function ContentType(type, subtype, params) {
@@ -8,6 +9,14 @@ var ContentType = (function () {
         this.subtype = subtype;
         this.params = params;
     }
+    ContentType.valueOf = function (value) {
+        var params = value.split(";");
+        var _a = params.shift().split("/"), type = _a[0], subtype = _a[1];
+        return new ContentType(type, subtype, new Map(params.map(function (param) {
+            var indexOfEqualSign = param.indexOf("=");
+            return [param.substring(0, indexOfEqualSign), param.substring(indexOfEqualSign + 1)];
+        })));
+    };
     ContentType.prototype.getType = function () {
         return this.type;
     };
@@ -35,14 +44,6 @@ var ContentType = (function () {
             string += ";" + Array.from(this.params).map(function (param) { return param.join("="); }).join(";");
         }
         return string;
-    };
-    ContentType.valueOf = function (value) {
-        var params = value.split(";");
-        var _a = params.shift().split("/"), type = _a[0], subtype = _a[1];
-        return new ContentType(type, subtype, new Map(params.map(function (param) {
-            var indexOfEqualSign = param.indexOf("=");
-            return [param.substring(0, indexOfEqualSign), param.substring(indexOfEqualSign + 1)];
-        })));
     };
     return ContentType;
 }());
